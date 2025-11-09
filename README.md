@@ -7,7 +7,7 @@ Conway’s Game of Life をシンプルな構成で実装する学習用プロ�
 
 - グリッド更新（B3/S23 ルール）
 - 一時停止 / リセット / シード固定
-- OpenGL + GLFW + GLAD による描画
+- OpenGL + GLFW + GLEW による描画
 - CMake でビルド可能（Windows / MSVC or MSYS2）
 
 ## Project Structure

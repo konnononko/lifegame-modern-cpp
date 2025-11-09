@@ -11,13 +11,13 @@
 
 - Windows 11 / CMake / Ninja 推奨
 - MSVC または MSYS2(UCRT64) の GCC/Clang
-- 依存: OpenGL, GLFW, GLAD（必要に応じ GLM）
+- 依存: OpenGL, GLFW, GLEW（必要に応じ GLM）
 
 ## Layout & Dependencies
 
 ```
 core/    STLのみ（入出力やGL禁止）
-render/  GLFW/GLAD 初期化 + RGBA8テクスチャ更新 + ウィンドウ描画（固定解像度）
+render/  GLFW/GLEW 初期化 + RGBA8テクスチャ更新 + ウィンドウ描画（固定解像度）
 app/     main とイベントループ・入力
 tests/   最小ユニットテスト
 ```
@@ -87,4 +87,4 @@ public:
 
 - 「このREADME/指示に従い、`tests/test_life.cpp` にブロック/ブリンカー/全死の赤テストを追加」
 - 「`core/life.cpp` の `step()` を最小で実装（分岐最小化）。テストを緑にするパッチをdiffで」
-- 「GLFW/GLAD初期化と RGBA8 テクスチャ更新、全画面クアッド描画を `render/` に分離して生成」
+- 「GLFW/GLEW初期化と RGBA8 テクスチャ更新、全画面クアッド描画を `render/` に分離して生成」
