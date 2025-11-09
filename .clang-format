@@ -1,0 +1,29 @@
+# .clang-format for LifeGame (C++23)
+BasedOnStyle: LLVM
+Standard: Cpp23
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+
+# 波かっこスタイル: K&R (Attach)
+BreakBeforeBraces: Attach
+AllowShortFunctionsOnASingleLine: Empty
+
+# インデントと空白
+NamespaceIndentation: None
+SpacesInParentheses: false
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+PointerAlignment: Left
+
+# インクルード整理
+SortIncludes: true
+IncludeBlocks: Regroup
+
+# その他
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AllowAllParametersOfDeclarationOnNextLine: false
+KeepEmptyLinesAtTheStartOfBlocks: false
