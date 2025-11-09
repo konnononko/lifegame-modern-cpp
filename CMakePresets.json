@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "ucrt64-debug",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-ucrt64-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_C_COMPILER": "C:/msys64/ucrt64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe",
+        "CMAKE_CXX_STANDARD": "23"
+      }
+    },
+    {
+      "name": "ucrt64-release",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/build-ucrt64-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_C_COMPILER": "C:/msys64/ucrt64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "C:/msys64/ucrt64/bin/g++.exe",
+        "CMAKE_CXX_STANDARD": "23"
+      }
+    }
+  ],
+  "buildPresets": [
+    { "name": "ucrt64-debug", "configurePreset": "ucrt64-debug" },
+    { "name": "ucrt64-release", "configurePreset": "ucrt64-release" }
+  ]
+}
