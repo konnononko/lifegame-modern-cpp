@@ -33,5 +33,15 @@
             "name": "ucrt64-release",
             "configurePreset": "ucrt64-release"
         }
+    ],
+    "testPresets": [
+        {
+            "name": "ucrt64-debug",
+            "configurePreset": "ucrt64-debug"
+        },
+        {
+            "name": "ucrt64-release",
+            "configurePreset": "ucrt64-release"
+        }
     ]
 }
